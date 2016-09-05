@@ -12,19 +12,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shogogg/ts-http-status-code.git"
+    "url": "https://github.com/shogogg/ts-http-status.git"
   },
   "scripts": {
-    "typings": "typings install",
     "build": "tsc",
     "clean": "rimraf *.js *.d.ts",
-    "clean:all": "rimraf *.js *.d.ts node_modules typings",
+    "clean:all": "rimraf *.js *.d.ts node_modules",
     "pretest": "npm run build",
     "pretest:watch": "npm run build",
     "test": "mocha --reporter spec --compilers ts:espower-typescript/guess",
     "test:watch": "mocha --reporter spec --compilers ts:espower-typescript/guess -w"
   },
   "devDependencies": {
+    "@types/mocha": "^2.2.31",
     "espower-typescript": "^5.0.1",
     "mocha": "^2.5.3",
     "power-assert": "^1.4.1",
